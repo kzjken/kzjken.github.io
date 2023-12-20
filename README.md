@@ -2,9 +2,9 @@
 
 A Byte of Everything
 
-## News
+<!-- ## News
 
-News I'm interested in, maybe you are too
+News I'm interested in, maybe you are too -->
 
 ## MyCraft
 
