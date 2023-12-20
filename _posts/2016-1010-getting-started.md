@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Getting Started"
+author: "Paul Le"
+categories: documentation
+tags: [documentation,sample]
+image: city-1.jpg
+---
+
 # Millennial
 
 Millennial is a minimalist Jekyll theme for running a simple, clean, content-focused publishing platform for your publication site or blog through [Github Pages](https://pages.github.com/), or on your own server. Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in [the demo site](https://lenpaul.github.io/Millennial/). For a guide on how to deploy a Jekyll site using GitHub Pages, please check out [this article](https://paulle.ca/jekyll-tutorials/deploy-jekyll-site-github-pages).
@@ -22,35 +31,43 @@ If you like my work then please consider supporting me with [Ko-fi](https://ko-f
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-   1. [What is Jekyll](#what-is-jekyll)
-   2. [Never Used Jeykll Before?](#never-used-jekyll-before)
-2. [Installation](#installation)
-   1. [GitHub Pages Installation](#github-pages-installation)
-   2. [Local Installation](#local-installation)
-   3. [Directory Structure](#directory-structure)
-   4. [Starting From Scratch](#starting-from-scratch)
-3. [Configuration](#configuration)
-   1. [Sample Posts](#sample-posts)
-   2. [Site Variables](#site-variables)
-   3. [Adding Menu Pages](#adding-menu-pages)
-   4. [Posts](#posts)
-   5. [Layouts](#layouts)
-   6. [YAML Front Block Matter](#yaml-front-block-matter)
-4. [Features](#features)
-   1. [Design Considerations](#design-considerations)
-   2. [Disqus](#disqus)
-   3. [Google Analytics](#google-analytics)
-   4. [RSS Feeds](#rss-feeds)
-   5. [Social Media Icons](#social-media-icons)
-   6. [MathJax](#mathjax)
-   7. [Syntax Highlighting](#syntax-highlighting)
-   8. [Markdown](#markdown)
-5. [Everything Else](#everything-else)
-6. [Contributing](#Contributing)
-7. [Questions?](#questions)
-8. [Credits](#credits)
-9. [License](#license)
+- [Millennial](#millennial)
+  - [Notable features](#notable-features)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+    - [What is Jekyll?](#what-is-jekyll)
+    - [Never Used Jekyll Before?](#never-used-jekyll-before)
+  - [Installation](#installation)
+    - [GitHub Pages Installation](#github-pages-installation)
+    - [Local Installation](#local-installation)
+    - [Directory Structure](#directory-structure)
+    - [Starting From Scratch](#starting-from-scratch)
+  - [Configuration](#configuration)
+    - [Sample Posts](#sample-posts)
+    - [Site Variables](#site-variables)
+    - [Adding Menu Pages](#adding-menu-pages)
+    - [Posts](#posts)
+    - [Layouts](#layouts)
+    - [YAML Front Block Matter](#yaml-front-block-matter)
+  - [Features](#features)
+    - [Design Considerations](#design-considerations)
+    - [Disqus](#disqus)
+    - [Google Analytics](#google-analytics)
+    - [RSS Feeds](#rss-feeds)
+    - [Social Media Icons](#social-media-icons)
+    - [MathJax](#mathjax)
+    - [Syntax Highlighting](#syntax-highlighting)
+    - [Markdown](#markdown)
+  - [Everything Else](#everything-else)
+  - [Contributing](#contributing)
+  - [Questions?](#questions)
+  - [Credits](#credits)
+    - [Creator](#creator)
+      - [Paul Le](#paul-le)
+    - [Contributors](#contributors)
+    - [Icons + Demo Images](#icons--demo-images)
+    - [Other](#other)
+  - [License](#license)
 
 ## Introduction
 
@@ -68,7 +85,7 @@ The beauty of hosting your website on GitHub is that you don't have to actually 
 
 ### GitHub Pages Installation
 
-To start using Jekyll right away with GitHub Pages, [fork the Millennial repository on GitHub](https://github.com/LeNPaul/Millennial/fork). From there, you can rename your repository to `USERNAME.github.io`, where `USERNAME` is your GitHub username, and edit the `settings.yml` file in the `_data` folder to your liking. Ensure that you have a branch named `gh-pages`. Your website should be ready immediately at 'http://USERNAME.github.io'. Note: if you are hosting several sites under the same GitHub username, then you will have to use [Project Pages instead of User Pages](https://help.github.com/articles/user-organization-and-project-pages/) - just change the repository name to something other than 'http://USERNAME.github.io'.
+To start using Jekyll right away with GitHub Pages, [fork the Millennial repository on GitHub](https://github.com/LeNPaul/Millennial/fork). From there, you can rename your repository to 'USERNAME.github.io', where 'USERNAME' is your GitHub username, and edit the `settings.yml` file in the `_data` folder to your liking. Ensure that you have a branch named `gh-pages`. Your website should be ready immediately at 'http://USERNAME.github.io'. Note: if you are hosting several sites under the same GitHub username, then you will have to use [Project Pages instead of User Pages](https://help.github.com/articles/user-organization-and-project-pages/) - just change the repository name to something other than 'http://USERNAME.github.io'.
 
 Head over to the `_posts` directory to view all the posts that are currently on the website, and to see examples of what post files generally look like. You can simply just duplicate the template post and start adding your own content.
 
@@ -176,7 +193,7 @@ Millennial supports comments at the end of posts through [Disqus](https://disqus
 
 ### Google Analytics
 
-It is possible to track your site statistics through [Google Analytics](https://www.google.com/analytics/). Similar to Disqus, you will have to create an account for Google Analytics, and enter the correct Google ID for your site under `google-ID` in the `settings.yml` file. More information on [how to set up Google Analytics](https://michaelsoolee.com/google-analytics-jekyll/). Note: If you are not using Google Analytics, please change `google-ID` to an empty string.
+It is possible to track your site statistics through [Google Analytics](https://www.google.com/analytics/). Similar to Disqus, you will have to create an account for Google Analytics, and enter the correct Google ID for your site under `google-ID` in the `settings.yml` file. More information on [how to set up Google Analytics](https://michaelsoolee.com/google-analytics-jekyll/).
 
 ### RSS Feeds
 
