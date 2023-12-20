@@ -10,6 +10,7 @@ menu:
 # - {name: 'Interesting Facts',  url: 'facts'}
 # - {name: 'Learning Resources', url: 'resources'}
 # - {name: 'Sample Posts',       url: 'sample-posts'}
+- {name: 'News',               url: 'news'}
 - {name: 'MyCraft',            url: 'mycraft'}
 - {name: 'Story',              url: 'story'}
 # - {name: 'Documentation',      url: 'documentation'}
@@ -20,6 +21,7 @@ menu:
 social:
 # - {icon: 'twitter', link:    'https://twitter.com/paululele'}
 # - {icon: 'facebook', link:   'https://www.facebook.com/paululele'}
+- {icon: 'linkedin', link:   'www.linkedin.com/in/zjkang/'}
 - {icon: 'instagram', link:  'https://www.instagram.com/abofe_zk'}
 # - {icon: 'envelope', link:   'mailto:hello@paulle.ca'}
 - {icon: 'rss-square', link: 'feed.xml'}
