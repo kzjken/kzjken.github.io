@@ -13,6 +13,7 @@ menu:
 # - {name: 'News',               url: 'news'}
 - {name: 'MyCraft',            url: 'mycraft'}
 - {name: 'Story',              url: 'story'}
+- {name: 'Essay',              url: 'essay'}
 # - {name: 'Documentation',      url: 'documentation'}
 - {name: 'About',              url: 'about'}
 # - {name: 'Contact',            url: 'contact'}
