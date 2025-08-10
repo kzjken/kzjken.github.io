@@ -2694,6 +2694,10 @@ input[type="button"].btn--primary:focus {
 }
 
 .skill-bars-thin li strong {
+    max-width: 100%; /* 或者固定宽度 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-family: var(--font-1);
     font-weight: 600;
     color: var(--color-text-dark);
