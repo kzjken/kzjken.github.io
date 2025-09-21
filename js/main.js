@@ -108,11 +108,11 @@
         headerNavWrap.querySelectorAll('.s-header__nav a').forEach(function(link) {
             link.addEventListener("click", function(evt) {
 
-                // at 800px and below
-                if (window.matchMedia('(max-width: 800px)').matches) {
-                    toggleButton.classList.toggle('is-clicked');
-                    siteBody.classList.toggle('menu-is-open');
-                }
+                // // at 800px and below
+                // if (window.matchMedia('(max-width: 800px)').matches) {
+                //     toggleButton.classList.toggle('is-clicked');
+                //     siteBody.classList.toggle('menu-is-open');
+                // }
             });
         });
 
@@ -304,7 +304,7 @@
         ssPreloader();
         ssParallax();
         ssMoveHeader();
-        ssMobileMenu();
+        // ssMobileMenu();
         ssScrollSpy();
         ssSwiper();
         ssLightbox();
