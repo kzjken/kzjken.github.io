@@ -3551,6 +3551,12 @@ input[type="button"].btn--primary:focus {
     opacity: .2;
 }
 
+@media (max-width: 768px) {
+    .s-hero__bg::before,
+    .s-hero__bg::after {
+        display: none;
+    }
+}
 /* ------------------------------------------------------------------- 
  * ## hero content
  * ------------------------------------------------------------------- */
