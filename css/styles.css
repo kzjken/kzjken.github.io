@@ -4049,21 +4049,24 @@ input[type="button"].btn--primary:focus {
     text-align: center;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## portfolio list
  * ------------------------------------------------------------------- */
+
 .folio-list {
     max-width: 1180px;
     margin-top: var(--vspace-2_5);
+
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     justify-content: flex-start;
 }
 
+/* 一行四个 */
 .folio-item {
-    flex: 1 1 300px;
-    max-width: 300px;
+    flex: 0 0 calc((100% - 48px) / 4);
+    max-width: calc((100% - 48px) / 4);
     box-sizing: border-box;
 }
 
@@ -4071,59 +4074,60 @@ input[type="button"].btn--primary:focus {
     position: relative;
     width: 100%;
     padding-bottom: 66.66%;
-    background-color: white;
     overflow: hidden;
+    background: #fff;
     display: block;
 }
 
 .folio-item__thumb img {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     display: block;
+
+    transition: transform .5s;
 }
 
 .folio-item__thumb::before {
-    z-index: 1;
     content: "";
-    display: block;
-    background-color: rgba(0, 0, 0, 0.8);
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.8);
+
     opacity: 0;
     visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s;
+
+    transition: .5s;
+
+    z-index: 1;
 }
 
 .folio-item__thumb::after {
-    z-index: 1;
     content: "...";
-    font-family: var(--font-2);
-    font-weight: 300;
-    font-size: 3rem;
-    color: white;
-    display: block;
-    height: 32px;
-    width: 32px;
-    line-height: 32px;
-    margin-left: -16px;
-    margin-top: -16px;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.5);
-    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+
     position: absolute;
     left: 50%;
     top: 50%;
+
+    transform: translate(-50%,-50%) scale(.5);
+
+    color: #fff;
+    font-size: 3rem;
+    font-family: var(--font-2);
+    font-weight: 300;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .5s;
+
+    z-index: 2;
 }
 
 .folio-item:hover .folio-item__thumb::before {
@@ -4134,14 +4138,35 @@ input[type="button"].btn--primary:focus {
 .folio-item:hover .folio-item__thumb::after {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
+    transform: translate(-50%,-50%) scale(1);
 }
 
 .folio-item:hover .folio-item__thumb img {
     transform: scale(1.05);
-    transition: all 0.5s;
-    will-change: transform;
 }
+
+/* Tablet */
+
+@media screen and (max-width:800px){
+
+    .folio-item{
+        flex:0 0 calc((100% - 16px)/2);
+        max-width:calc((100% - 16px)/2);
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width:500px){
+
+    .folio-item{
+        flex:0 0 100%;
+        max-width:100%;
+    }
+
+}
+
 /* ------------------------------------------------------------------- 
  * ## modal popup
  * ------------------------------------------------------------------- */
@@ -4269,7 +4294,7 @@ input[type="button"].btn--primary:focus {
  * responsive:
  * cta
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .s-cta {
         font-size: var(--text-md);
         line-height: var(--vspace-1);
